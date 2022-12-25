@@ -1,4 +1,4 @@
-# algorithm
+# 코테 대비 노트 
 
 ## 정렬
 sort(), sorted() 에서 key를 이용한 정렬
