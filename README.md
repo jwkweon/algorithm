@@ -25,3 +25,20 @@ print(sorted_dict)
 sorted_dict = sorted(my_dict.items(), key = lambda item: item[1], reverse=True)
 print(sorted_dict)
 ```
+
+
+## heapq
+
+```
+hq = []
+# 최소힙
+for ...
+    heapq.heappush(hq, val)
+
+# 최대힙
+for ...
+    heapq.heappush(hq, -val)
+    
+# 리스트 -> 힙
+heapq.heapify(list)
+```
