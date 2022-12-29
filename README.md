@@ -42,3 +42,11 @@ for ...
 # 리스트 -> 힙
 heapq.heapify(list)
 ```
+
+### 단수한 tip
+
+리스트에 n개 원소 
+```
+[False] * n
+[0] * n
+```
