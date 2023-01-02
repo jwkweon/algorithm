@@ -14,14 +14,14 @@ ex: `arr = sorted(arr, key= lambda x : (x[1], x[0]))`
 딕셔너리 값으로 정렬 : 두번째 인자 역순
 
 ex:
-```
+```py
 sorted_dict = sorted(my_dict.items(), key = lambda item: -item[1])
 print(sorted_dict)
 ```
 
 `reverse = True` 도 가능
     
-```
+```py
 sorted_dict = sorted(my_dict.items(), key = lambda item: item[1], reverse=True)
 print(sorted_dict)
 ```
@@ -29,7 +29,7 @@ print(sorted_dict)
 
 ## heapq
 
-```
+```py
 hq = []
 # 최소힙
 for ...
@@ -45,15 +45,16 @@ heapq.heapify(list)
 
 ### 단수한 tip
 
-리스트에 n개 원소 
-```
+-리스트에 n개 원소 
+```py
 [False] * n
 [0] * n
 ```
 
 - 문자열 내 특수 기호 제거
+
 정규 표현식 `re.sub`을 이용해서 제거
-```
+```py
 import re
 
 str_input = '...'
