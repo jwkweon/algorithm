@@ -50,3 +50,14 @@ heapq.heapify(list)
 [False] * n
 [0] * n
 ```
+
+- 문자열 내 특수 기호 제거
+정규 표현식 `re.sub`을 이용해서 제거
+```
+import re
+
+str_input = '...'
+
+out = re.sub('[^A-Za-z0-9가-힣]', '', str_input)
+
+```
