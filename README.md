@@ -77,9 +77,9 @@ for ...
 heapq.heapify(list)
 ```
 
-### 단수한 tip
+### 단순한 tip
 
--리스트에 n개 원소 
+- 리스트에 n개 원소 
 ```py
 [False] * n
 [0] * n
