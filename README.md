@@ -26,6 +26,40 @@ sorted_dict = sorted(my_dict.items(), key = lambda item: item[1], reverse=True)
 print(sorted_dict)
 ```
 
+## Dijkstra
+
+우선순위 큐로 구현
+전반적인 코드 동작 원리 이해
+
+```py
+import heapq
+
+'''
+distance, graph 처리
+'''
+
+def dijkstra(start):
+    # 초기조건
+    q = []
+    heapq.heappush(q, (0, start))
+    distance[start] = 0
+    
+    while q:
+        dist, n = heapq.heappop(q)
+        
+        if distance[now] < dist:
+            continue
+        
+        for i in graph[now]:
+            cost = dist + i[1] # value
+            if cost < distance[i[0]]:
+                # update
+                distance[i[0]] = cost
+                heapq.heappush(q, (cost, i[0]))
+
+```
+
+
 
 ## heapq
 
