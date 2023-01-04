@@ -96,3 +96,9 @@ str_input = '...'
 out = re.sub('[^A-Za-z0-9가-힣]', '', str_input)
 
 ```
+
+### itertools
+
+- product
+
+
