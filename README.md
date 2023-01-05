@@ -101,4 +101,25 @@ out = re.sub('[^A-Za-z0-9가-힣]', '', str_input)
 
 - product
 
+### 가장 긴 증가하는 수열 & 가장 긴 감소하는 수열 & 혼합
 
+```py
+n = int(input())
+arr = list(map(int, input().split()))
+rv_arr = arr[::-1]  # 감소 수열 찾기위해
+lis = [1] * n
+lds = [1] * n
+
+for i in range(n):
+    for j in range(i):
+        if arr[i] > arr[j]:
+            lis[i] = max(lis[i], lis[j] + 1)    # 가장 긴 증가수열
+        
+        if rv_arr[i] > rv_arr[j]:
+            lds[i] = max(lds[i], lds[j] + 1)     # 가장 긴 감소수열
+
+ans = [x+y for x,y in zip(lis, lds[::-1])]
+
+print(max(ans)-1) # 증가했다가 감소하는 수열 중 제일 긴 것       
+
+```
